@@ -1,0 +1,1097 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <!-- <meta name="viewport" content="width=1024"> -->
+    <title>Benjamin Lawani</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<style>
+    /* IMPORT FONTS */
+/* body */
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+/* ALL SECTIONS */
+/* .header,
+.main-body {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(193, 100%, 96%);
+} */
+
+body {
+  font-family: "Sora", sans-serif;
+  font-size: 16px;
+  color: hsl(0, 0%, 0%);
+  font-weight: 400;
+  /* overflow-x: hidden; */
+  width: 100%;
+}
+
+.publication-head{
+  font-weight: 600;
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: -0.02em;
+    margin-top: auto;
+  
+    color: #000000;
+}
+
+.project-head, .talk-head{
+  font-weight: 600;
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: -0.02em;
+  
+    color: #000000;
+}
+
+.header{
+  box-sizing: border-box;
+  
+    width: 1440px;
+    height: 112px;
+  
+    background: #FFFFFF;
+    border-bottom: 1px solid #4E28B1;
+  
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.picture_border{
+  position: relative;
+    left: 9.44%;
+    right: 72.22%;
+    top: 23.81%;
+    bottom: 23.81%;
+  
+    background: #EBE4FD;
+}
+
+.picture{
+  position: absolute;
+    left:0;
+    right: 73.22%;
+    top: 26.39%;
+    bottom: 24.81%;
+  /* background: #3b364a */
+  
+      /* height: auto; */
+}
+
+.clip{
+  border-radius: 50%;
+  border: 4px solid #EBE4FD;
+    padding: 5px;
+}
+
+.pub-title{
+  position: relative;
+
+  width: 484px;
+    height: 105px;
+  /* position: relative; */
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: -0.02em;
+  
+    color: #000000;
+  
+  
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.title{
+
+    grid-area: title;
+    
+  /* position: relative; */
+  
+    width: 484px;
+    height: 105px;
+    /* position: relative; */
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: -0.02em;
+  
+    color: #000000;
+}
+
+.org{
+  font-style:normal;
+  letter-spacing: 0.0em;
+  font-weight: 600;
+}
+
+
+
+.pub-title-p {
+    top: 33.24%;
+    bottom: 53.74%;
+  width: 484px;
+    height: 75px;
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 154.6%;
+    /* position: absolute; */
+    /* or 25px */
+  /* display: inline-flex; */
+    color: #000000;
+  
+  
+    /* Inside auto layout */
+    /* flex: none;
+    order: 3;
+    flex-grow: 0; */
+}
+
+.pub-title-p{
+    padding-top: 0;
+      margin-top: 0;
+}
+.title-p{
+    /* padding-top: 0; */
+      /* margin-top: auto; */
+      /* top: 0; */
+        bottom: 5.74%;
+        width: 484px;
+        height: 75px;
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 154.6%;
+        /* position: relative; */
+        /* or 25px */
+        /* display: inline-flex; */
+        color: #000000;
+        grid-area: title-p;
+}
+
+.hello{
+  box-sizing: border-box;
+  position: relative;
+  
+    width: 1440px;
+    height: 361px;
+  
+    background: #F3EEFF;
+    border-bottom: 1px solid #4E28B1;
+  
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+
+.hello-head{
+  position: absolute;
+    left: 28.78%;
+      right: 9.44%;
+    top: 20.24%;
+    bottom: 53.74%;
+  
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 117%;
+    /* identical to box height, or 47px */
+    /* text-align: center; */
+    letter-spacing: -0.02em;
+  
+    color: #000000;
+}
+
+/* .hello-head {
+  position: absolute;
+  left: 32.78%;
+  right: 9.44%;
+  top: 38.1%;
+  bottom: 52.58%;
+
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+
+  color: #000000;
+} */
+
+
+/* .hello-body {
+  position: absolute;
+  left: 32.78%;
+  right: 9.44%;
+  top: 52.18%;
+  bottom: 37.9%;
+  padding-top: 2%;
+
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 154.6%;
+
+  color: #000000;
+} */
+
+.hello-body{
+  position: absolute;
+    left: 28.78%;
+      right: 9.44%;
+      top: 40.24%;
+      bottom: 37.9%;
+    padding-top: 2%;
+  
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 154.6%;
+    /* or 25px */
+    /* text-align: center; */
+  
+    color: #000000;
+}
+
+.selected-project, .latest-talk{
+  position: relative;
+    left: 9.44%;
+    right: 46.53%;
+    top: 4.42%;
+    bottom: 90.44%;
+  
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 117%;
+    /* identical to box height, or 47px */
+    letter-spacing: -0.02em;
+  
+    color: #4E28B1;
+}
+
+.projects{
+  width: 1440px;
+    height: 1496px;
+    background: #FFFFFF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    overflow-x: hidden;
+    margin-top: 3%;
+
+}
+
+.talks {
+  width: 1440px;
+  height: 1496px;
+  background: #F8F8F9;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  overflow-x: hidden;
+  margin-top: 3%;
+
+}
+
+.main-projects, .main-talk{
+  display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+  
+    position: absolute;
+    width: 1168px;
+    height: 1226px;
+    left: 136px;
+    top: 183px;
+}
+
+.publications{
+  width: 1440px;
+    /* height: 1079px; */
+    height: 1200px;
+  
+    background: #F8F8F9;
+  
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    overflow-x: hidden;
+    overflow-y: hidden
+}
+
+.latest-publication{
+  position: relative;
+    left: 9.44%;
+    right: 46.53%;
+    top: 8.9%;
+    bottom: 86.75%;
+  
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 117%;
+    /* identical to box height, or 47px */
+    letter-spacing: -0.02em;
+  
+    color: #4E28B1;
+}
+
+.main-publications{
+  display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+  
+    position: absolute;
+    width: 1168px;
+    height: 848px;
+    left: 136px;
+    top: 183px;
+}
+
+.experiences{
+  width: 1440px;
+    /* height: 571px; */
+    height: 680px;
+  
+  
+    /* Inside auto layout */
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+    overflow-x: hidden;
+}
+
+.exp{
+  position: relative;
+    left: 9.44%;
+    right: 46.53%;
+    top: 13.5%;
+    bottom: 74.96%;
+  
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 117%;
+    /* identical to box height, or 47px */
+    letter-spacing: -0.02em;
+
+    color: #4E28B1;
+}
+
+footer{
+  box-sizing: border-box;
+  margin-top: 3%;
+    width: 1440px;
+    height: 172px;
+  
+    background: #F2EFFC;
+  
+    /* Inside auto layout */
+    flex: none;
+    order: 6;
+    flex-grow: 0;
+    overflow-x: hidden;
+}
+
+
+.projects-box1, .talk-box1{
+  box-sizing: border-box;
+  
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 8px;
+  /* margin: auto; */
+    width: 564px;
+    height: 593px;
+  background: #FFFFFF;
+    /* background-color: aqua; */
+    border: 1px solid #EBE4FD;
+  
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    grid-area: box1;
+}
+
+.projects-box2, .talk-box2{
+  box-sizing: border-box;
+  
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 8px;
+  
+    width: 564px;
+    height: 593px;
+  
+    background: #FFFFFF;
+    /* background-color: darkgreen; */
+    border: 1px solid #EBE4FD;
+  
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    grid-area: box2;
+}
+
+.projects-box3, .talk-box3{
+  box-sizing: border-box;
+  
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 8px;
+  
+    width: 564px;
+    height: 593px;
+  
+    background: #FFFFFF;
+    /* background-color: chartreuse; */
+    border: 1px solid #EBE4FD;
+  
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    grid-area: box3;
+}
+
+.projects-box4, .talk-box4{
+  box-sizing: border-box;
+  
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 8px;
+  
+    width: 564px;
+    height: 593px;
+  
+    background: #FFFFFF;
+    /* background-color: #4E28B1; */
+    border: 1px solid #EBE4FD;
+  
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    grid-area: box4;
+}
+
+/* .box1,.box2,.box3,.box4{
+  border-color: ;
+} */
+
+
+
+.projects-texts{
+  position: relative;
+    display: grid;
+    gap: 0px;
+    grid-template-areas:
+      "title"
+      "title-p";
+/* position: relative;
+  padding-top: 0;
+  margin-top: 0; */
+  background-color: #1212ef;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.projects-img{
+  width: 484px;
+    height: 249px;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    place-items: center;
+}
+
+.talk-img {
+  width: 484px;
+  height: 249px;
+  /* position: absolute; */
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  place-items: center;
+}
+
+
+.projects-body img{
+  position: relative;
+    width: 247px;
+    height: 249px;
+    margin: auto;
+    display: block;
+      /* padding: 50%; */
+    /* left: 150px; */
+    top: 3%;
+}
+
+.main-projects, .main-talk{
+  position: relative;
+  display: grid;
+  gap: 40px;
+    grid-template-areas:
+      "box1 box2"
+      "box3 box4";
+    justify-content: center;
+    margin-top: -8%;
+}
+
+.pub-box1, .pub-box2, .pub-box3, .pub-box4{
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 80px 40px;
+gap: 8px;
+
+width: 564px;
+height: 404px;
+
+background: #FFFFFF;
+border: 1px solid #EBE4FD;
+
+/* Inside auto layout */
+flex: none;
+flex-grow: 0;
+}
+
+.pub-box1,
+.pub-box3{
+ order: 0;
+}
+.pub-box2,
+.pub-box4{
+  order: 1;
+}
+
+.pub-box1{
+  grid-area: box1-pub;
+}
+.pub-box2 {
+  grid-area: box2-pub;
+}
+.pub-box3 {
+  grid-area: box3-pub;
+}
+.pub-box4{
+  grid-area: box4-pub;
+}
+
+/* .talk-box1,
+.talk-box3 {
+  order: 0;
+}
+
+.talk-box2,
+.talk-box4 {
+  order: 1;
+}
+
+.talk-box1 {
+  grid-area: box1-pub;
+}
+
+.talk-box2 {
+  grid-area: box2-pub;
+}
+
+.talk-box3 {
+  grid-area: box3-pub;
+}
+
+.talk-box4 {
+  grid-area: box4-pub;
+} */
+
+/* 
+.project-head {
+  top: 5%;
+  position: absolute;
+}
+
+.project-body {
+  top: 1%;
+  position: absolute;
+} */
+
+.pub-body{
+  position: relative;
+    display: flex;
+    flex-direction: column;
+    /* align-items:center; */
+    gap: 1px;
+    /* top: 42.91%; */
+}
+.main-pub{
+  position: relative;
+  display: grid;
+  gap: 40px;
+  grid-template-areas:
+    "box1-pub box2-pub"
+    "box3-pub box4-pub";
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.exp1, .exp2, .exp3{
+  position: relative;
+  width: 1168px;
+  height: 23px;
+  display: flex;
+  gap: 80px;
+  flex-direction: row;
+  align-items: flex-end;
+  /* justify-content: left;
+  place-items: left; */
+  text-align: left;
+ 
+
+
+  /* Inside auto layout */
+  /* flex: none; */
+  /* flex-grow: 0; */
+}
+
+.exp1{
+    order: 1;
+}
+.exp2 {
+  order: 3;
+}
+.exp3 {
+  order: 5;
+}
+
+.main-exp {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 0px;
+  gap: 40px;
+  width: 1168px;
+  height: 332px;
+  left: 136px;
+  top: 183px;
+  align-content: left;
+  text-align: left;
+  /* flex-shrink: 1;
+  flex-grow: 1; */
+}
+
+table {
+  border-collapse: collapse;
+  width: 1168px;
+  margin-left: 9.44%;
+  margin-right: 46.53%;
+    /* margin: auto; */
+    margin-top: 5%;
+    border-spacing: 150px;
+}
+
+table,
+th,
+td {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+tr {
+  border: solid;
+  border: 1px solid #E5DBFF;
+  border-left: None;
+  border-right: None;
+}
+
+.col1 p, .col2_1, .col2_2{
+  width: 421px;
+    height: 22px;
+  
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 154.6%;
+    /* identical to box height, or 22px */
+  
+    color: #000000;
+  
+  
+    /* Inside auto layout */
+    /* flex: none;
+    flex-grow: 0; */
+}
+/* 
+.col1 p{
+      order: 0;
+}
+
+.col2 p {
+  order: 1;
+} */
+
+
+.col1{
+display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 3%;
+  padding: 0px;
+  /* gap: 8px; */
+
+  position: absolute;
+  width: 421px;
+  height: 22px;
+  left: 136px;
+  /* top: 56px; */
+  grid-area: col1;
+    
+}
+
+.col2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 16px;
+  margin-top: -6%;
+/* margin-left: 9.44%; */
+  /* margin-right: 46.53%; */
+  position: absolute;
+  width: 219px;
+  height: 65px;
+  left: 1085px;
+  /* top: 56px; */
+  grid-area: col2;
+}
+
+/* .div-footer{ */
+
+  /* position: absolute;
+    display: grid; */
+    /* gap: 40px; */
+    /* grid-template-areas:
+      "col1 col2"; */
+    /* justify-content: center; */
+    /* margin-top: 10%; */
+/* 
+    position: relative;
+    display: flex; */
+    /* flex-direction: column; */
+    /* align-items: left;
+    padding: 0px;
+    gap: 40px; */
+    /* width: 1168px; */
+    /* height: 332px;
+    left: 136px;
+    top: 183px; */
+    /* align-content: left;
+    text-align: left; */
+    /* flex-shrink: 1;
+  flex-grow: 1; */
+  /* } */
+
+.right-nav div{
+  display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+  
+    position:relative;
+    /* width: 1100px; */
+    width: 503px;
+    height: 20px;
+    left: 803px;
+    top: 46px;
+}
+
+
+.left-nav{
+  position: relative;
+    left: 9.44%;
+    right: 81.6%;
+    top:30px;
+    /* bottom: 39.29%; */
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+  
+    color: #000000;
+}
+</style>
+<body>
+    <!-- header -->
+    <div class="header">
+        <span class="right-nav">
+            <div>
+            <a href="https://github.com/BenjaminLawani" style="text-decoration: none; 
+                           background-color: none; color: black;">GitHub</a>
+
+
+            <a href="assets/Benjamin Lawani - Machine Learning Engineer (CV).pdf" style="text-decoration: none; 
+                           background-color: none; color: black;">Resume</a>
+            <span style="display:flex; gap:0px">
+                <a href="mailto:la.benjamib@gmail.com"
+                    style="background-color: none; color: black;">Let's talk</a>
+            </span>
+            </div>
+        </span>
+        
+
+        <span class="left-nav">
+            <a href="https://www.linkedin.com/in/BenjaminLawani/" style="text-decoration: none; 
+                                       background-color: none; color: black;">Benjamin Lawani</a>
+        </span>
+       </div> 
+
+    </div>
+  
+    <!-- Hello page -->
+    <div class="hello">
+        <div class="picture_border">
+            <div class="picture">
+                <img class="clip" height=200 width=200 src="assets/my_avatar.jpeg">
+                    <!-- xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <a xlink:href="https://css-tricks.com">
+                        <circle cx="50" cy="50" r="50"></circle>
+                    </a> -->
+                    <!-- <circle cx="50" cy="50" r="30" fill="white" /> -->
+                </img>
+                <!-- <img src="assets/Benjamin Lawani.png" alt="Benjamin Lawani"> -->
+            </div>
+        
+        </div>
+        <p class="hello-head">Hello there 👋🏽, I'm Benjamin Lawani.</p>
+        <p class="hello-body">I am a machine learning engineer with research and industry experience. I analyze data, build and package machine learning models for production. My research interests are low-resourced NLP, Automatic Speech Recognition and low-resourced data collection/generation.</p>
+    </div>
+
+        <!-- Experiences (Table)-->
+    <section class="experiences">
+        <p class="exp">Experiences</p>
+        <div style="overflow-x:auto">
+        <table>
+            <tr>
+                <td class="org">The Alternative Bank - Lagos, Nigeria</td>
+                <td>Software Engineer</td>
+                <td>Nov 2024 - Feb 2025</td>
+            </tr>
+        
+            <tr>
+                <td class="org">Sterling Bank Plc. - Lagos, Nigeria</td>
+                <td>Data Scientist</td>
+                <td>Feb 2023 - July 2023</td>
+            </tr>
+        
+            <tr>
+                <td class="org">Mentora. - Remote</td>
+                <td>ML Software Engineer (Contract)</td>
+                <td>February 2022 - October 202</td>
+            </tr>
+        
+        </table>
+        </div>
+        
+    </section>
+
+    
+
+    <!-- Selected Projects-->
+    <section class="projects">
+        <p class="selected-project">Selected Projects</p>
+        <!-- inner box containing the four boxes -->
+        <main class="main-projects">
+    
+            <div class="projects-box1">
+                <div class="projects-body">
+                    <div class="projects-img" style="background-color: #FFD7D7;">
+                        <img src="assets/Frame.svg" alt="illustration">
+                    </div>
+                    <div class="project">
+                        <p class="project-head">Pulse</p>
+                        <p class="project-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor fuga quo ipsum quam exercitationem corporis blanditiis, in et quos magni repellat qui perferendis iusto corrupti, cupiditate voluptatem earum incidunt hic.</p>
+                        <span style="display:flex; gap:0px">
+                            <a href="https://github.com/BenjaminLawani/Pulse"
+                                style="background-color: none; color: black;">See
+                                Project</a>
+                            <a href="https://github.com/BenjaminLawani/Pulse">
+                                <img src="assets/arrow.svg" style="width:24px; height:24px" /></a>
+                        </span>
+                    </div>
+    
+    
+                </div>
+    
+            </div>
+    
+            <div class="projects-box2">
+                <div class="projects-body">
+                    <div class="projects-img" style="background-color: #DCEFFF;">
+                        <img src="assets/Frame-2.svg" alt="illustration">
+                    </div>
+    
+                    <div class="project">
+                        <p class="project-head">Credibly</p>
+                        <p class="project-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, porro quia. Cum consequatur provident eligendi fugit eius? Magnam atque, aperiam blanditiis nesciunt itaque provident dolorem ipsa molestiae culpa obcaecati dolorum.</p>
+                        <span style="display:flex; gap:0px">
+                            <a href="https://github.com/BenjaminLawani/Credibly"
+                                style="background-color: none; color: black;">See
+                                Project</a>
+                            <a href="https://github.com/BenjaminLawani/Credibly">
+                                <img src="assets/arrow.svg" style="width:24px; height:24px" /></a>
+                        </span>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="projects-box3">
+                <div class="projects-body">
+                    <div class="projects-img" style="background-color: #F0EBFC;">
+                        <img src="assets/Frame-3.svg" alt="illustration">
+                    </div>
+                    <div class="project">
+                        <p class="project-head">Will they Flag?</p>
+                        <p class="project-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quidem alias mollitia tempora obcaecati, pariatur, consequatur nesciunt necessitatibus fugit, numquam recusandae ipsum consequuntur culpa hic nostrum molestiae magnam dolore quam.</p>
+                        <span style="display:flex; gap:0px">
+                            <a href="https://github.com/BenjaminLawani/will-they-flag"
+                                style="background-color: none; color: black;">See
+                                Project</a>
+                            <a href="https://github.com/BenjaminLawani/will-they-flag">
+                                <img src="assets/arrow.svg" style="width:24px; height:24px" /></a>
+                        </span>
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+            <div class="projects-box4">
+                <div class="projects-body">
+                    <div class="projects-img" style="background-color: #F2FFF3;">
+                        <img src="assets/Frame-4.svg" alt="illustration">
+                    </div>
+                    <div class="project">
+                        <p class="project-head">Clearfile</p>
+                        <p class="project-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint possimus minima unde eligendi laboriosam distinctio quos non perferendis! Laboriosam nostrum accusantium minima quaerat beatae non. Omnis reiciendis minus saepe distinctio!</p>
+                        <span style="display:flex; gap:0px">
+                            <a href="https://github.com/BenjaminLawani/tcnspeech-transcriber"
+                                style="background-color: none; color: black;">See
+                                Project</a>
+                            <a href="https://github.com/BenjaminLawani/tcnspeech-transcriber">
+                                <img src="assets/arrow.svg" style="width:24px; height:24px" /></a>
+                        </span>
+                    </div>
+                    <!-- <p class="title">Real Time Speech Recognition for Nigerian Church Sermons</p>
+                    <p class="title-p">
+                        GGHH -->
+                    <!-- </p> -->
+                </div>
+    
+            </div>
+    
+        </main>
+    
+    </section>
+
+    <footer>
+
+        <div class="div-footer">
+
+            <div class="col1">
+                <p>@2022. Design by Kachie Ibejih | Dev by me :)</p>
+            <div>
+
+            <div class="col2">
+                <div class="col2_1">
+                <span style="display:flex; gap:10px">
+                    <a href="mailto:BenjaminLawani@gmail.com">
+                    <img src="assets/email.svg" /></a>
+                <a href="mailto:BenjaminLawani@gmail.com" style="text-decoration: none; 
+   background-color: none; color: black;">la.benjamib@gmail.com</a>
+                </div>
+
+                <div class="col2_2">
+                    <span>
+                        <a href="https://github.com/BenjaminLawani">
+                        <img src="assets/github-icon.svg"/></a>
+
+                        <a href="https://twitter.com/">
+                        <img src="assets/twitter.svg"/></a>
+
+                        <a href="https://www.linkedin.com/in/Benjamin-Lawani/">
+                        <img src="assets/linkedin-icon.svg"/></a>
+                </div>
+            </div>
+                   
+        </div>
+    </footer>
+</body>
+
+</html>
